@@ -1,14 +1,14 @@
 package com.example.SpringReactMongoProject.Repo;
 
 import com.example.SpringReactMongoProject.Entity.User;
-
+import com.example.SpringReactMongoProject.Entity.Vendor;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.Optional;
 
-public interface UserRepo extends MongoRepository<User, String> {
+public interface VendorRepo extends MongoRepository<Vendor, String> {
 
-    Optional<User> findByEmail(String email);
+    Optional<Vendor> findByEmail(String email);
 
     Boolean existsByEmail(String email);
 }

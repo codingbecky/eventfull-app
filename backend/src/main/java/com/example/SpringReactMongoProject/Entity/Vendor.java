@@ -5,9 +5,8 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-@Document(collection = "users")
-public class User {
-
+@Document(collection = "vendors")
+public class Vendor {
     @Id
     private String _id;
 
@@ -24,26 +23,20 @@ public class User {
     @Email
     private String email;
 
-    @NotBlank
-    @Size(max = 1)
-    private Integer role;
-
-    public User(String _id, String name, String email, String password, Integer role) {
+    public Vendor(String _id, String name, String email, String password) {
         this._id = _id;
         this.name = name;
         this.password = password;
         this.email = email;
-        this.role = role;
     }
 
-    public User(String name, String email, String password, Integer role) {
+    public Vendor(String name, String email, String password) {
         this.name = name;
         this.password = password;
         this.email = email;
-        this.role = role;
     }
 
-    public User() {
+    public Vendor() {
     }
 
     public String get_id() {
@@ -78,22 +71,13 @@ public class User {
         this.email = email;
     }
 
-    public Integer getRole() {
-        return role;
-    }
-
-    public void setRole(Integer role) {
-        this.role = role;
-    }
-
     @Override
     public String toString() {
-        return "User{" +
-                "_id=" + _id +
-                ", name=" + name +
-                ", password=" + password +
-                ", email=" + email +
-                ", role=" + role +
+        return "Vendor{" +
+                "_id='" + _id + '\'' +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
                 '}';
     }
 }
