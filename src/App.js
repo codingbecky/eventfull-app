@@ -18,6 +18,8 @@ import { UserLogin } from "./screens/UserLogin";
 import { VendorSignUp } from "./screens/VendorSignUp";
 import { VendorLogin } from "./screens/VendorLogin";
 
+import { MainPage } from "./screens/MainPage";
+import { AboutUs } from "./screens/AboutUs";
 
 import "./sb-admin-2.css";
 import "./index.css";
@@ -28,8 +30,10 @@ export default function App() {
       <BrowserRouter>
         <Routes>
 
-          {/* <Route path="/" exact element={<Login />} />
-          <Route path="/register" element={<Register />} /> */}
+          <Route path="/" exact element={<MainPage />} />
+
+          <Route path="/about-us" exact element={<AboutUs />} />
+          {/* <Route path="/register" element={<Register />} /> */}
           
           <Route path="/user-signup" exact element={<UserSignUp />} />
           <Route path="/user-login" exact element={<UserLogin />} />

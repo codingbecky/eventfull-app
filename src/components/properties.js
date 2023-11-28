@@ -13,8 +13,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { right } from "@popperjs/core";
 
-import profileImage from '../img/undraw_profile.svg';
-
 const { confirm } = Modal;
 const { Content, Footer, Sider } = Layout;
 
@@ -126,7 +124,7 @@ export default function PropertyList() {
         <div style={{ paddingLeft: 20, paddingRight: 20, paddingTop: 10, marginBottom: 10, borderTop: '1px solid #f0f0f0' }}>
           <Row>
             <Col span={16}>
-              <span className="smaller"><img className="img-profile rounded-circle" width={25} src={profileImage}/>&ensp;Church Chicken</span>
+              <span className="smaller"><img className="img-profile rounded-circle" width={25} src=""/>&ensp;Church Chicken</span>
             </Col>
             <Col span={8} style={{ textAlign: right }}>
               <span><FontAwesomeIcon icon={icon({ name: "file" })} />&ensp;No.{props.property.no}</span>
