@@ -9,3 +9,7 @@ export const saveJwtToken = (jwtToken) => {
 export const removeJwtToken = () => {
     return localStorage.removeItem('eventfulluser');
 }
+
+export const returnToMainpage = () => {
+    return window.location = "/";
+}

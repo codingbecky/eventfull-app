@@ -21,6 +21,21 @@ import { VendorLogin } from "./screens/VendorLogin";
 import { MainPage } from "./screens/MainPage";
 import { AboutUs } from "./screens/AboutUs";
 
+import { SearchCategory } from "./screens/SearchCategory";
+import { VendorDetailsPage } from "./screens/VendorDetailsPage/VendorDetailsPage";
+import { CustomerBookingPage } from "./screens/CustomerBookingPage";
+
+import { VendorAccount } from "./screens/VendorAccount";
+import { VendorCompany } from "./screens/VendorCompany";
+import { VendorBooking } from "./screens/VendorBooking";
+import { VendorSchedule } from "./screens/VendorSchedule";
+
+import { MyAccountDefault } from "./screens/MyAccountDefault";
+import { MyAccount } from "./screens/MyAccount";
+import { Subscribe } from "./screens/Subscribe";
+import { Plans } from "./screens/Plans";
+import { Payment } from "./screens/Payment";
+
 import "./sb-admin-2.css";
 import "./index.css";
 
@@ -35,6 +50,21 @@ export default function App() {
           <Route path="/about-us" exact element={<AboutUs />} />
           {/* <Route path="/register" element={<Register />} /> */}
           
+          <Route path="/search-category" element={<SearchCategory />} />
+          <Route path="/vendor-details" element={<VendorDetailsPage />} />
+          <Route path="/booking-status" element={<CustomerBookingPage />} />
+
+          <Route path="/myaccount-default" element={<MyAccountDefault />} />
+          <Route path="/myaccount" element={<MyAccount />} />
+          <Route path="/subscribe" element={<Subscribe />} />
+          <Route path="/plans" element={<Plans />} />
+          <Route path="/payment" element={<Payment />} />
+
+          <Route path="/vendor-account" element={<VendorAccount />} />
+          <Route path="/vendor-company" element={<VendorCompany />} />
+          <Route path="/vendor-booking" element={<VendorBooking />} />
+          <Route path="/vendor-schedule" element={<VendorSchedule />} />
+
           <Route path="/user-signup" exact element={<UserSignUp />} />
           <Route path="/user-login" exact element={<UserLogin />} />
 

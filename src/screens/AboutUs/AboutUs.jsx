@@ -40,7 +40,7 @@ export const AboutUs = () => {
     },
     {
       key: '2',
-      label: "Log out",
+      label: "Sign out",
       onClick: () => { signOut(); },
     }
   ];

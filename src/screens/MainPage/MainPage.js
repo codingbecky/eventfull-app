@@ -76,7 +76,7 @@ export const MainPage = () => {
     },
     {
       key: '2',
-      label: "Log out",
+      label: "Sign out",
       onClick: () => { signOut(); },
     }
   ];
@@ -111,7 +111,7 @@ export const MainPage = () => {
               duration: 2,
             });
           }, 500);
-          setTimeout(function() { window.location = "/property"; }, 1000);
+          setTimeout(function() { window.location = "/"; }, 1000);
         }
         else{
           setTimeout(() => {
@@ -257,9 +257,6 @@ export const MainPage = () => {
               whiteLogin="default"
             /> */}
 
-            {
-              console.log('getJwtToken', getJwtToken())
-            }
             { getJwtToken() ?
             
             <div className={`login-group myaccount-group-instance`}>
@@ -275,8 +272,6 @@ export const MainPage = () => {
                         items,
                       }}
                     >
-                      {/* <span className="LOGIN signup">MyAccount</span> */}
-
                       <a className="LOGIN signup" onClick={(e) => e.preventDefault()}>
                         <Space>
                           MyAccount
@@ -284,24 +279,19 @@ export const MainPage = () => {
                         </Space>
                       </a>
                     </Dropdown>
-                  {/* <a className="rectangle" href='/user-login'><span className="LOGIN signin">SIGN UP</span></a> */}
                 </div>
               </div>
             </div>
-
             :
-
             <LoginGroup
               className="login-group-instance"
               icon={<Login2 className="login-2-instance" />}
               whiteLogin="default"
+              loginLink="/user-login"
+              SignupLink="/user-signup"
             />
-
             }
 
-            {
-              console.log('isHoverVendor', isHoverVendor)
-            }
             { isHoverVendor ?
               <CategoryDropDown
                 categoryDropDownClassName="design-component-instance-node"

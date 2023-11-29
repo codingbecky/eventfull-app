@@ -1,7 +1,6 @@
 package com.example.SpringReactMongoProject.Controller;
 
 import com.example.SpringReactMongoProject.Entity.Vendor;
-import com.example.SpringReactMongoProject.Service.UserServices;
 import com.example.SpringReactMongoProject.Service.VendorServices;
 import org.springframework.web.bind.annotation.*;
 

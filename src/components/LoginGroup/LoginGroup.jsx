@@ -9,7 +9,7 @@ import { Login } from "../../icons/Login";
 import { Login1 } from "../../icons/Login1";
 import "./style.css";
 
-export const LoginGroup = ({ whiteLogin, className, icon = <Login1 className="login-2" /> }) => {
+export const LoginGroup = ({ whiteLogin, className, icon = <Login1 className="login-2" />, loginLink, SignupLink }) => {
   return (
     <div className={`login-group ${className}`}>
       <div className="overlap-group-wrapper">
@@ -30,11 +30,11 @@ export const LoginGroup = ({ whiteLogin, className, icon = <Login1 className="lo
 
           {whiteLogin === "default" && (
             <>
-              <a className="login-btn" href='/user-login'>
+              <a className="login-btn" href={loginLink}>
                 {icon}
                 <span className="LOGIN signup">LOGIN</span>
               </a>
-              <a className="rectangle" href='/user-login'><span className="LOGIN signin">SIGN UP</span></a>
+              <a className="rectangle" href={SignupLink}><span className="LOGIN signin">SIGN UP</span></a>
             </>
           )}
 

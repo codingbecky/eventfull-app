@@ -1,0 +1,593 @@
+.my-account {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.my-account .div-2 {
+  background-color: #ffffff;
+  height: 2873px;
+  position: relative;
+  width: 1920px;
+}
+
+.my-account .overlap {
+  height: 1971px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.my-account .bg-img {
+  height: 976px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.my-account .white-logo {
+  height: 54px;
+  left: 218px;
+  object-fit: cover;
+  position: absolute;
+  top: 85px;
+  width: 232px;
+}
+
+.my-account .slogan {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 11px;
+  left: 218px;
+  position: absolute;
+  top: 438px;
+}
+
+.my-account .rectangle {
+  background-color: #f87c56;
+  height: 199px;
+  position: relative;
+  width: 10px;
+}
+
+.my-account .slogans {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 58.5px;
+  font-weight: 700;
+  height: 199px;
+  letter-spacing: 0;
+  line-height: 67.9px;
+  margin-top: -1px;
+  position: relative;
+  width: 787px;
+}
+
+.my-account .group {
+  height: 1098px;
+  left: 223px;
+  position: absolute;
+  top: 873px;
+  width: 1479px;
+}
+
+.my-account .overlap-group {
+  height: 1098px;
+  position: relative;
+}
+
+.my-account .rectangle-2 {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 48px 12px #00000017;
+  height: 941px;
+  left: 0;
+  position: absolute;
+  top: 157px;
+  width: 1479px;
+}
+
+.my-account .group-2 {
+  background-color: #f7f7f7;
+  height: 157px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1479px;
+}
+
+.my-account .overlap-group-2 {
+  height: 157px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1062px;
+}
+
+.my-account .rectangle-3 {
+  background-color: #f7f7f7;
+  height: 157px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 354px;
+}
+
+.my-account .rectangle-4 {
+  background-color: #f87c56;
+  height: 157px;
+  left: 354px;
+  position: absolute;
+  top: 0;
+  width: 354px;
+}
+
+.my-account .rectangle-5 {
+  background-color: #f7f7f7;
+  height: 157px;
+  left: 708px;
+  position: absolute;
+  top: 0;
+  width: 354px;
+}
+
+.my-account .group-3 {
+  /* height: 71px; */
+  left: 76px;
+  position: absolute;
+  top: 52px;
+  width: 924px;
+}
+
+.my-account .text-wrapper-6 {
+  color: #343434;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 34px;
+  letter-spacing: 2px;
+  line-height: normal;
+  position: absolute;
+  top: 10px;
+  width: 218px;
+}
+
+.my-account .text-wrapper-7 {
+  color: #343434;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 346px;
+  letter-spacing: 2px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  width: 218px;
+}
+
+.my-account .billing-subscription {
+  color: #343434;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 700px;
+  letter-spacing: 2px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  width: 218px;
+}
+
+.my-account .get-eventfull-pro {
+  color: #343434;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 1086px;
+  letter-spacing: 2px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  width: 218px;
+}
+
+.my-account .rectangle-6 {
+  background-color: #f7f7f7;
+  height: 157px;
+  left: 1062px;
+  position: absolute;
+  top: 0;
+  width: 417px;
+}
+
+.my-account .table-flight-list-version-a {
+  left: 269px !important;
+  position: absolute !important;
+  top: 1099px !important;
+}
+
+.my-account .navbar {
+  gap: 28.09px !important;
+  left: 567px !important;
+  position: absolute !important;
+  top: 100px !important;
+}
+
+.my-account .menu-instance {
+  font-size: 25.9px !important;
+  margin-top: -1.08px !important;
+}
+
+.my-account .login-group {
+  height: 57px;
+  left: 1381px;
+  position: absolute;
+  top: 91px;
+  width: 227px;
+}
+
+.my-account .overlap-2 {
+  height: 57px;
+  left: 25px;
+  position: relative;
+  width: 202px;
+}
+
+.my-account .login {
+  border-radius: 7.12px;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 57px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 89px;
+}
+
+.my-account .ellipse {
+  background-color: #ffffff;
+  border-radius: 7.12px;
+  height: 14px;
+  left: 21px;
+  position: absolute;
+  top: 12px;
+  width: 14px;
+}
+
+.my-account .img {
+  height: 14px;
+  left: 15px;
+  position: absolute;
+  top: 28px;
+  width: 28px;
+}
+
+.my-account .text-wrapper-8 {
+  color: #ffffff;
+  font-family: "Nunito Sans", Helvetica;
+  font-size: 25.9px;
+  font-weight: 700;
+  left: 56px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-shadow: 0px 4px 4px #00000040;
+  top: 11px;
+  width: 146px;
+}
+
+.my-account .footer {
+  background-color: #ffffff;
+  height: 474px;
+  left: 0;
+  position: absolute;
+  top: 2399px;
+  width: 1920px;
+}
+
+.my-account .group-wrapper {
+  height: 341px;
+  left: 346px;
+  position: relative;
+  top: 66px;
+  width: 1228px;
+}
+
+.my-account .group-4 {
+  height: 341px;
+  position: relative;
+  width: 1230px;
+}
+
+.my-account .p {
+  color: #181433;
+  font-family: "Manrope", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  left: 467px;
+  letter-spacing: -0.32px;
+  line-height: 26px;
+  position: absolute;
+  text-align: center;
+  top: 315px;
+  white-space: nowrap;
+}
+
+.my-account .rectangle-7 {
+  background-color: #e4e4e9;
+  height: 2px;
+  left: 26px;
+  position: absolute;
+  top: 273px;
+  width: 1200px;
+}
+
+.my-account .nav-wrap {
+  height: 180px;
+  left: 317px;
+  position: absolute;
+  top: 16px;
+  width: 911px;
+}
+
+.my-account .nav-list-item {
+  height: 156px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 99px;
+}
+
+.my-account .text-wrapper-9 {
+  color: #181433;
+  font-family: "Manrope", Helvetica;
+  font-size: 21px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.my-account .frame {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 18px;
+  left: 0;
+  position: absolute;
+  top: 48px;
+}
+
+.my-account .text-wrapper-10 {
+  color: #181433;
+  font-family: "Manrope", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.my-account .text-wrapper-11 {
+  color: #181433;
+  font-family: "Manrope", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.my-account .nav-list-item-2 {
+  height: 180px;
+  left: 234px;
+  position: absolute;
+  top: 0;
+  width: 189px;
+}
+
+.my-account .frame-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 12px;
+  left: 0;
+  position: absolute;
+  top: 48px;
+}
+
+.my-account .nav-list-item-3 {
+  height: 173px;
+  left: 522px;
+  position: absolute;
+  top: 0;
+  width: 393px;
+}
+
+.my-account .div-wrapper {
+  height: 52px;
+  left: 0;
+  position: absolute;
+  top: 48px;
+  width: 389px;
+}
+
+.my-account .overlap-group-wrapper {
+  height: 52px;
+  width: 393px;
+}
+
+.my-account .overlap-group-3 {
+  background-color: #93aec130;
+  height: 52px;
+  position: relative;
+  width: 389px;
+}
+
+.my-account .text-wrapper-12 {
+  color: #181433;
+  font-family: "Manrope", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  left: 15px;
+  letter-spacing: -0.32px;
+  line-height: 26px;
+  opacity: 0.2;
+  position: absolute;
+  top: 14px;
+  white-space: nowrap;
+}
+
+.my-account .overlap-3 {
+  background-color: #f87c56;
+  border-radius: 10px;
+  box-shadow: 0px 20px 35px #df695126;
+  height: 52px;
+  left: 240px;
+  position: absolute;
+  top: 0;
+  width: 149px;
+}
+
+.my-account .text-wrapper-13 {
+  color: #ffffff;
+  font-family: "Manrope", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  left: 43px;
+  letter-spacing: -0.32px;
+  line-height: 26px;
+  position: absolute;
+  top: 13px;
+  white-space: nowrap;
+}
+
+.my-account .will-send-you-weekly {
+  color: #181433;
+  font-family: "Manrope", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: -0.32px;
+  line-height: 26px;
+  opacity: 0.5;
+  position: absolute;
+  top: 121px;
+}
+
+.my-account .group-5 {
+  height: 107px;
+  left: 7px;
+  position: absolute;
+  top: 107px;
+  width: 215px;
+}
+
+.my-account .discover-book {
+  color: #757095;
+  font-family: "Manrope", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: -0.32px;
+  line-height: 28px;
+  position: absolute;
+  top: 0;
+  width: 213px;
+}
+
+.my-account .group-6 {
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 87px;
+  width: 128px;
+}
+
+.my-account .original-logo {
+  height: 72px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 239px;
+}
+
+.my-account .group-7 {
+  height: 324px;
+  left: 0;
+  position: absolute;
+  top: 2075px;
+  width: 1920px;
+}
+
+.my-account .group-8 {
+  height: 324px;
+  width: 1922px;
+}
+
+.my-account .overlap-group-4 {
+  height: 324px;
+  position: relative;
+  width: 1920px;
+}
+
+.my-account .footer-head {
+  background-image: url(./img/rectangle-19380.png);
+  background-size: 100% 100%;
+  height: 324px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.my-account .rectangle-8 {
+  background-color: #1d1d1d54;
+  height: 324px;
+}
+
+.my-account .text-wrapper-14 {
+  color: #ffffff;
+  font-family: "Volkhov", Helvetica;
+  font-size: 50px;
+  font-weight: 700;
+  left: 654px;
+  letter-spacing: 0;
+  line-height: 71px;
+  position: absolute;
+  text-align: center;
+  top: 128px;
+  white-space: nowrap;
+  width: 639px;
+}
+
+.my-account .ant-dropdown .ant-dropdown-menu,
+.my-account-dropdown.ant-dropdown .ant-dropdown-menu{
+  padding: 14px !important;
+  width: 180px !important;
+}
+
+.my-account a.ant-dropdown-trigger:hover,
+.my-account-dropdown a.ant-dropdown-trigger:hover{
+  cursor: pointer;
+}
+
+.my-account .ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content,
+.my-account-dropdown.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content{
+  font-size: 20px !important;
+}

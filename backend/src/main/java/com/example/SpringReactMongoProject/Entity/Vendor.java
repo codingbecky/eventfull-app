@@ -1,8 +1,6 @@
 package com.example.SpringReactMongoProject.Entity;
 
-import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "vendors")
@@ -11,32 +9,37 @@ public class Vendor {
     private String _id;
 
     @NotBlank
-    @Size(max = 20)
-    private String name;
+    private String userId;
 
     @NotBlank
-    @Size(max = 120)
-    private String password;
+    private String firstName;
+
+    private String middleName;
 
     @NotBlank
-    @Size(max = 50)
-    @Email
-    private String email;
+    private String lastName;
 
-    public Vendor(String _id, String name, String email, String password) {
+    @NotBlank
+    private String DateOfBirth;
+
+    @NotBlank
+    private String emailAddress;
+
+    @NotBlank
+    private String phoneNumber;
+
+    private String StreetAddress;
+
+    public Vendor(String _id, String userId, String firstName, String middleName, String lastName, String dateOfBirth, String emailAddress, String phoneNumber, String streetAddress) {
         this._id = _id;
-        this.name = name;
-        this.password = password;
-        this.email = email;
-    }
-
-    public Vendor(String name, String email, String password) {
-        this.name = name;
-        this.password = password;
-        this.email = email;
-    }
-
-    public Vendor() {
+        this.userId = userId;
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+        this.DateOfBirth = dateOfBirth;
+        this.emailAddress = emailAddress;
+        this.phoneNumber = phoneNumber;
+        this.StreetAddress = streetAddress;
     }
 
     public String get_id() {
@@ -47,37 +50,68 @@ public class Vendor {
         this._id = _id;
     }
 
-    public String getUsername() {
-        return name;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setUsername(String name) {
-        this.name = name;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
-    public String getPassword() {
-        return password;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getEmail() {
-        return email;
+    public String getMiddleName() {
+        return middleName;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
     }
 
-    @Override
-    public String toString() {
-        return "Vendor{" +
-                "_id='" + _id + '\'' +
-                ", name='" + name + '\'' +
-                ", password='" + password + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+    public String getLastName() {
+        return lastName;
     }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getDateOfBirth() {
+        return DateOfBirth;
+    }
+
+    public void setDateOfBirth(String dateOfBirth) {
+        DateOfBirth = dateOfBirth;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getStreetAddress() {
+        return StreetAddress;
+    }
+
+    public void setStreetAddress(String streetAddress) {
+        StreetAddress = streetAddress;
+    }
+
 }

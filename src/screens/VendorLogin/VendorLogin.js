@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import { ConfigProvider, Layout, Form, Input, Button, Space, Checkbox, Divider, message } from 'antd';
 
+import { getJwtToken, saveJwtToken, removeJwtToken } from '../../helper/jwt.helper';
+
 import "./style.css";
 
 const SubmitButton = ({ form }) => {
@@ -65,6 +67,9 @@ export const VendorLogin = () => {
       .then((result) => {
         console.log(result);
         if(result.data.role == 2){
+
+          saveJwtToken(result.data.id);
+
           setTimeout(() => {
             messageApi.open({
               type: 'success',
@@ -72,7 +77,7 @@ export const VendorLogin = () => {
               duration: 2,
             });
           }, 500);
-          setTimeout(function() { window.location = "/property"; }, 1000);
+          setTimeout(function() { window.location = "/vendor-account"; }, 1000);
         }
         else{
           setTimeout(() => {
