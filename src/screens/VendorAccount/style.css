@@ -789,3 +789,86 @@
 .my-account-dropdown.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content{
   font-size: 20px !important;
 }
+
+.vendor-account .frame-3 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+}
+
+.vendor-account .ant-form-item.text-wrapper-3 .ant-input{
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+  height: 40px;
+}
+
+.vendor-account .ant-form-item.text-wrapper-3 label{
+  display: none !important;
+}
+
+.vendor-account .frame-2 .ant-form-item{
+  padding-left: 30px;
+}
+
+.vendor-account .frame-2 .antd-datetime-picker .ant-row{
+  width: 250px;
+}
+
+.vendor-account .frame-2 .antd-datetime-picker label{
+  display: none !important;
+}
+
+.vendor-account .frame-2 .antd-datetime-picker .ant-picker-input{
+  font-size: 40px;
+}
+
+/*.vendor-account .frame-2 .ant-form-item-row.antd-datetime-picker .ant-picker-input */
+#dateOfBirth{
+  font-size: 24px;
+}
+
+.vendor-account .submit-button button{
+  font-size: 24px;
+  width: 70px;
+  height: 45px;
+}
+
+.vendor-account .submit-button .ant-btn-primary:not(:disabled){
+  background-color: #f87c56;
+}
+
+.vendor-account .submit-button .ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover{
+  background-color: #ce5a37;
+}
+
+.vendor-account .frame-2 input:hover,
+.vendor-account .frame-2 input:focus,
+.vendor-account .ant-picker-focused,
+.vendor-account .ant-picker:hover{
+  border-color: #f87c56;
+}
+/* 
+.vendor-account .submit-button .ant-btn-default{
+  background-color: #f87c56;
+}
+
+.vendor-account .submit-button.ant-btn-default span{
+  color: white;
+}
+
+.vendor-account .submit-button.ant-btn-default{
+  color: white;
+}
+
+.vendor-account .submit-button.ant-btn-default:hover{
+  background-color: #ce5a37 !important;
+} */

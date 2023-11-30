@@ -1,1 +1,0 @@
-export { MyAccountDefault } from "./MyAccountDefault";

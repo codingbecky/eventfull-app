@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 import axios from "axios";
-import { ConfigProvider, Layout, Form, Input, Button, Space, Checkbox, Divider, message, Dropdown } from 'antd';
+import { ConfigProvider, Layout, Form, Input, Button, Space, Checkbox, Divider, Upload, DatePicker, Progress, message, Dropdown } from 'antd';
 import { DeleteOutlined, EditOutlined, SmileOutlined, DownOutlined } from "@ant-design/icons";
+
+import moment from "moment";
 
 import { LoginGroup } from "../../components/LoginGroup";
 import { Menu } from "../../components/Menu";
@@ -15,12 +17,39 @@ import { Route, Switch, useLocation } from 'react-router-dom'
 
 import "./style.css";
 
+const SubmitButton = ({ form }) => {
+
+  const [submittable, setSubmittable] = React.useState(false);
+
+  // Watch all values
+  const values = Form.useWatch([], form);
+  React.useEffect(() => {
+    form
+      .validateFields({
+        validateOnly: true,
+      })
+      .then(
+        () => {
+          setSubmittable(true);
+        },
+        () => {
+          setSubmittable(false);
+        }
+      );
+  }, [values]);
+  return (
+    <Button type="primary" htmlType="submit" disabled={!submittable}>
+      Save
+    </Button>
+  );
+};
+
 export const VendorAccount = () => {
   
   useEffect(()  => { document.body.classList.remove('login-style'); });
 
   const { pathname, hash, key } = useLocation();
-
+  
   useEffect(() => {
     // if not a hash link, scroll to top
     if (hash === '') {
@@ -39,9 +68,60 @@ export const VendorAccount = () => {
   const [messageApi, contextHolder] = message.useMessage();
 
   const [data, setData] = useState({
-    email: "",
-    password: "",
+    _id: "",
+    userId: "",
+    firstName: "",
+    middleName: "",
+    lastName: "",
+    dateOfBirth: "",
+    emailAddress: "",
+    phoneNumber: "",
+    streetAddress: "",
   });
+
+  useEffect(() => {
+    axios
+      .post(`${process.env.REACT_APP_API_URL}/api/v1/vendor/getinfo`, {
+        userId: getJwtToken(),
+      })
+      .then((response) => {
+        console.log(response);
+        setData(response.data);
+
+        // setData((prevData) => ({
+        //   ...prevData,
+        //   _id: response.data._id,
+        //   userId: response.data.userId,
+        //   firstName: response.data.firstName,
+        //   middleName: response.data.middleName,
+        //   lastName: response.data.lastName,
+        //   dateOfBirth: response.data.dateOfBirth,
+        //   emailAddress: response.data.emailAddress,
+        //   phoneNumber: response.data.phoneNumber,
+        //   streetAddress: response.data.streetAddress
+        // }));
+
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  useEffect(() => {
+    // console.log('in useEffect setFieldsValue');
+    form.setFieldsValue({
+      _id: data._id,
+      userId: data.userId,
+      firstName: data.firstName,
+      middleName: data.middleName,
+      lastName: data.lastName,
+      // dateOfBirth: data.dateOfBirth,
+      emailAddress: data.emailAddress,
+      phoneNumber: data.phoneNumber,
+      streetAddress: data.streetAddress
+    });
+  }, [data]);
+
 
   const signOut = () => {
     // console.log("signOut click");
@@ -73,40 +153,66 @@ export const VendorAccount = () => {
     setData(newData);
   }
 
+  function handleDateChange(date) {
+    if (date != null) {
+      const dateOfBirth = date.format("YYYY-MM-DD");
+      const newData = { ...data };
+      newData.dateOfBirth = dateOfBirth;
+      console.log(newData);
+      setData(newData);
+    }
+  }
+
   function submit() {
 
     messageApi.open({
-      type: 'logging in',
-      content: 'logging in...',
+      type: 'saving',
+      content: 'saving...',
       duration: 0.5
     });
 
     axios
-      .post(`${process.env.REACT_APP_API_URL}/api/v1/auth/user/signin`, {
-        email: data.email,
-        password: data.password,
+      .post(`${process.env.REACT_APP_API_URL}/api/v1/vendor/save`, {
+        _id: data._id,
+        userId: getJwtToken(),
+        firstName: data.firstName,
+        middleName: data.middleName,
+        lastName: data.lastName,
+        dateOfBirth: data.dateOfBirth,
+        emailAddress: data.emailAddress,
+        phoneNumber: data.phoneNumber,
+        streetAddress: data.streetAddress,
       })
       .then((result) => {
         console.log(result);
-        if(result.data.role == 1){
-          setTimeout(() => {
-            messageApi.open({
-              type: 'success',
-              content: 'Log in successful!',
-              duration: 2,
-            });
-          }, 500);
-          setTimeout(function() { window.location = "/vendor-account"; }, 1000);
-        }
-        else{
-          setTimeout(() => {
-            messageApi.open({
-              type: 'error',
-              content: 'Please login with a customer account!',
-              duration: 2,
-            });
-          }, 500);
-        }
+
+        setTimeout(() => {
+          messageApi.open({
+            type: 'success',
+            content: 'Saved!',
+            duration: 2,
+          });
+        }, 500);
+
+        // if(result.data.role == 1){
+        //   setTimeout(() => {
+        //     messageApi.open({
+        //       type: 'success',
+        //       content: 'Log in successful!',
+        //       duration: 2,
+        //     });
+        //   }, 500);
+        //   setTimeout(function() { window.location = "/vendor-account"; }, 1000);
+        // }
+        // else{
+        //   setTimeout(() => {
+        //     messageApi.open({
+        //       type: 'error',
+        //       content: 'Please login with a customer account!',
+        //       duration: 2,
+        //     });
+        //   }, 500);
+        // }
         
       })
       .catch((err) => {
@@ -226,7 +332,122 @@ export const VendorAccount = () => {
                 <div className="abc">Vendor Profile</div>
                 {/* <div className="icon-2" /> */}
               </div>
+
+              <Form
+                onFinish={() => submit()}
+                form={form}
+                name="validateOnly"
+                layout="vertical"
+                autoComplete="off"
+                style={{marginTop:'70px', marginLeft:'40px'}}
+              >
+                <div className='frame-2'>
+
+                  <div style={{display: 'flex'}}>
+                    <Form.Item
+                      name="firstName"
+                      label="First Name"
+                      rules={[{ required: true, message: 'Please input your first name!' }]}
+                      // style={{width:'180px'}}
+                      className='text-wrapper-3'
+                    >
+                      <Input id="firstName" placeholder="First name*" value={data.firstName} onChange={(e) => handle(e)}/>
+                    </Form.Item>
+                    
+                    <Form.Item
+                      name="middleName"
+                      label="Middle Name"
+                      // style={{paddingLeft: 30}}
+                      className='text-wrapper-3'
+                    >
+                      <Input id="middleName" placeholder="Middle name" value={data.middleName} onChange={(e) => handle(e)}/>
+                    </Form.Item>
+
+                    <Form.Item
+                      name="lastName"
+                      label="Last Name"
+                      rules={[{ required: true, message: 'Please input your last name!' }]}
+                      // style={{paddingLeft: 30}}
+                      className='text-wrapper-3'
+                    >
+                      <Input id="lastName" placeholder="Last name*" value={data.lastName} onChange={(e) => handle(e)}/>
+                    </Form.Item>
+                  </div>
+
+
+                  <div style={{display: 'flex'}}>
+                    <Form.Item
+                      name="suffix"
+                      label="Suffix"
+                      className='text-wrapper-3'
+                    >
+                      <Input id="suffix" placeholder="Suffix" onChange={(e) => handle(e)}/>
+                    </Form.Item>
+
+                    <Form.Item 
+                      name="dateOfBirth"
+                      label="Date of birth"
+                      rules={[{ required: true }]}
+                      // style={{width:'180px', marginLeft:'40px'}}
+                      className='antd-datetime-picker'
+                      >
+                      <DatePicker id="dateOfBirth" placeholder="Date of birth*" value={moment(data.dateOfBirth)} onChange={(e) => handleDateChange(e)}/>
+                    </Form.Item>
+                  </div>
+
+                  <Form.Item
+                    name="emailAddress"
+                    label="Email address"
+                    rules={[
+                      {
+                        type: 'email',
+                        message: 'The input is not valid E-mail!',
+                      },
+                      {
+                        required: true,
+                        message: 'Please input your E-mail!',
+                      },
+                    ]}
+                    className='text-wrapper-3'
+                  >
+                    <Input id="emailAddress" placeholder="Email address*" value={data.emailAddress} onChange={(e) => handle(e)}/>
+                  </Form.Item>
+
+                  <Form.Item
+                    name="phoneNumber"
+                    label="Phone number"
+                    rules={[
+                      {
+                        required: true,
+                        message: 'Please input your phone number!',
+                      },
+                    ]}
+                    className='text-wrapper-3'
+                  >
+                    <Input id="phoneNumber" placeholder="Phone number*" value={data.phoneNumber} onChange={(e) => handle(e)}/>
+                  </Form.Item>
+
+                  <Form.Item
+                    name="streetAddress"
+                    label="Street address"
+                    className='text-wrapper-3'
+                  >
+                    <Input id="streetAddress" placeholder="Street address" value={data.streetAddress} onChange={(e) => handle(e)}/>
+                  </Form.Item>
+
+                  <Form.Item
+                    className='submit-button'
+                  >
+                    <Space>
+                      <SubmitButton form={form} />
+                      {/* <Button >Edit</Button> */}
+                    </Space>
+                  </Form.Item>
+                </div>
+              </Form>
+
             </div>
+
             {/* <img className="separator" alt="Separator" src="/img/separator.svg" /> */}
             {/* <div className="button-row">
               <Button

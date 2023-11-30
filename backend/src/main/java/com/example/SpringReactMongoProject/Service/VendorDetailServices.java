@@ -1,5 +1,6 @@
 package com.example.SpringReactMongoProject.Service;
 
+import com.example.SpringReactMongoProject.Entity.Vendor;
 import com.example.SpringReactMongoProject.Entity.VendorDetail;
 import com.example.SpringReactMongoProject.Repo.VendorDetailRepo;
 import org.springframework.stereotype.Service;
@@ -19,4 +20,6 @@ public class VendorDetailServices {
     public void deleteVendorDetail(String id) { repo.deleteById(id); }
 
     public VendorDetail getVendorDetailById(String vendorDetailId) { return repo.findById(vendorDetailId).get(); }
+
+    public VendorDetail getVendorDetailByUserId(String userId) { return repo.getVendorDetailByUserId(userId); }
 }

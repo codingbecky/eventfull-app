@@ -1,4 +1,4 @@
-.my-account-default {
+.my-booking {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -6,14 +6,14 @@
   width: 100%;
 }
 
-.my-account-default .div-2 {
+.my-booking .div-2 {
   background-color: #ffffff;
   height: 3259px;
   position: relative;
   width: 1920px;
 }
 
-.my-account-default .overlap {
+.my-booking .overlap {
   height: 2461px;
   left: 0;
   position: absolute;
@@ -21,7 +21,7 @@
   width: 1920px;
 }
 
-.my-account-default .bg-img {
+.my-booking .bg-img {
   height: 976px;
   left: 0;
   position: absolute;
@@ -29,7 +29,7 @@
   width: 1920px;
 }
 
-.my-account-default .white-logo {
+.my-booking .white-logo {
   height: 54px;
   left: 218px;
   object-fit: cover;
@@ -38,7 +38,7 @@
   width: 232px;
 }
 
-.my-account-default .slogan {
+.my-booking .slogan {
   align-items: flex-start;
   display: inline-flex;
   gap: 11px;
@@ -47,14 +47,14 @@
   top: 438px;
 }
 
-.my-account-default .rectangle {
+.my-booking .rectangle {
   background-color: #f87c56;
   height: 199px;
   position: relative;
   width: 10px;
 }
 
-.my-account-default .slogans {
+.my-booking .slogans {
   color: #ffffff;
   font-family: "Poppins", Helvetica;
   font-size: 58.5px;
@@ -67,19 +67,19 @@
   width: 787px;
 }
 
-.my-account-default .navbar {
+.my-booking .navbar {
   gap: 28.09px !important;
   left: 567px !important;
   position: absolute !important;
   top: 100px !important;
 }
 
-.my-account-default .menu-instance {
+.my-booking .menu-instance {
   font-size: 25.9px !important;
   margin-top: -1.08px !important;
 }
 
-.my-account-default .login-group {
+.my-booking .login-group {
   height: 57px;
   left: 1381px;
   position: absolute;
@@ -87,14 +87,14 @@
   width: 227px;
 }
 
-.my-account-default .overlap-group {
+.my-booking .overlap-group {
   height: 57px;
   left: 25px;
   position: relative;
   width: 202px;
 }
 
-.my-account-default .login {
+.my-booking .login {
   border-radius: 7.12px;
   box-shadow: 0px 4px 4px #00000040;
   height: 57px;
@@ -105,7 +105,7 @@
   width: 89px;
 }
 
-.my-account-default .ellipse {
+.my-booking .ellipse {
   background-color: #ffffff;
   border-radius: 7.12px;
   height: 14px;
@@ -115,7 +115,7 @@
   width: 14px;
 }
 
-.my-account-default .img {
+.my-booking .img {
   height: 14px;
   left: 15px;
   position: absolute;
@@ -123,7 +123,7 @@
   width: 28px;
 }
 
-.my-account-default .text-wrapper-4 {
+.my-booking .text-wrapper-4 {
   color: #ffffff;
   font-family: "Nunito Sans", Helvetica;
   font-size: 25.9px;
@@ -137,7 +137,7 @@
   width: 146px;
 }
 
-.my-account-default .rectangle-2 {
+.my-booking .rectangle-2 {
   background-color: #ffffff;
   box-shadow: 0px 4px 48px 12px #00000017;
   height: 1586px;
@@ -147,7 +147,7 @@
   width: 1479px;
 }
 
-.my-account-default .p {
+.my-booking .p {
   color: #000000;
   font-family: "Nunito Sans", Helvetica;
   font-size: 40px;
@@ -160,7 +160,7 @@
   top: 262px;
 }
 
-.my-account-default .group {
+.my-booking .group {
   height: 157px;
   left: 223px;
   position: absolute;
@@ -168,13 +168,13 @@
   width: 1479px;
 }
 
-.my-account-default .group-2 {
+.my-booking .group-2 {
   background-color: #f7f7f7;
   height: 157px;
   position: relative;
 }
 
-.my-account-default .overlap-group-2 {
+.my-booking .overlap-group-2 {
   height: 157px;
   left: 0;
   position: absolute;
@@ -182,7 +182,7 @@
   width: 1062px;
 }
 
-.my-account-default .rectangle-3 {
+.my-booking .rectangle-3 {
   background-color: #f87c56;
   height: 157px;
   left: 0;
@@ -191,7 +191,7 @@
   width: 354px;
 }
 
-.my-account-default .rectangle-4 {
+.my-booking .rectangle-4 {
   background-color: #f7f7f7;
   height: 157px;
   left: 354px;
@@ -200,7 +200,7 @@
   width: 354px;
 }
 
-.my-account-default .rectangle-5 {
+.my-booking .rectangle-5 {
   background-color: #f7f7f7;
   height: 157px;
   left: 708px;
@@ -209,7 +209,7 @@
   width: 354px;
 }
 
-.my-account-default .group-3 {
+.my-booking .group-3 {
   /* height: 71px; */
   left: 76px;
   position: absolute;
@@ -217,7 +217,7 @@
   width: 924px;
 }
 
-.my-account-default .text-wrapper-5 {
+.my-booking .text-wrapper-5 {
   color: #343434;
   font-family: "Poppins", Helvetica;
   font-size: 20px;
@@ -230,7 +230,7 @@
   width: 218px;
 }
 
-.my-account-default .text-wrapper-6 {
+.my-booking .text-wrapper-6 {
   color: #343434;
   font-family: "Poppins", Helvetica;
   font-size: 20px;
@@ -244,7 +244,7 @@
   width: 218px;
 }
 
-.my-account-default .billing-subscription {
+.my-booking .billing-subscription {
   color: #343434;
   font-family: "Poppins", Helvetica;
   font-size: 20px;
@@ -258,7 +258,7 @@
   width: 218px;
 }
 
-.my-account-default .get-eventfull-pro {
+.my-booking .get-eventfull-pro {
   color: #343434;
   font-family: "Poppins", Helvetica;
   font-size: 20px;
@@ -272,7 +272,7 @@
   width: 218px;
 }
 
-.my-account-default .rectangle-6 {
+.my-booking .rectangle-6 {
   background-color: #f7f7f7;
   height: 157px;
   left: 1062px;
@@ -281,7 +281,7 @@
   width: 417px;
 }
 
-.my-account-default .categories {
+.my-booking .categories {
   height: 1093px;
   left: 250px;
   position: absolute;
@@ -289,7 +289,7 @@
   width: 1367px;
 }
 
-.my-account-default .enjoy-planning-your {
+.my-booking .enjoy-planning-your {
   height: 66px;
   left: 352px;
   position: absolute;
@@ -297,7 +297,7 @@
   width: 706px;
 }
 
-.my-account-default .text-wrapper-7 {
+.my-booking .text-wrapper-7 {
   color: #181e4b;
   font-family: "Volkhov", Helvetica;
   font-size: 46.2px;
@@ -312,7 +312,7 @@
   width: 704px;
 }
 
-.my-account-default .venues {
+.my-booking .venues {
   height: 476px;
   left: 0;
   position: absolute;
@@ -320,7 +320,7 @@
   width: 439px;
 }
 
-.my-account-default .overlap-group-3 {
+.my-booking .overlap-group-3 {
   background-color: #ffffff;
   border-radius: 19.42px;
   box-shadow: 0px 4px 47.99px 12px #00000017;
@@ -329,7 +329,7 @@
   width: 433px;
 }
 
-.my-account-default .overlap-2 {
+.my-booking .overlap-2 {
   height: 80px;
   left: 36px;
   position: absolute;
@@ -337,7 +337,7 @@
   width: 319px;
 }
 
-.my-account-default .qui-tempore {
+.my-booking .qui-tempore {
   color: #181e4b;
   font-family: "Poppins", Helvetica;
   font-size: 16px;
@@ -350,7 +350,7 @@
   width: 313px;
 }
 
-.my-account-default .text-wrapper-8 {
+.my-booking .text-wrapper-8 {
   color: #f87c56;
   font-family: "Poppins", Helvetica;
   font-size: 16px;
@@ -363,7 +363,7 @@
   width: 313px;
 }
 
-.my-account-default .overlap-group-4 {
+.my-booking .overlap-group-4 {
   height: 339px;
   left: 20px;
   position: absolute;
@@ -371,7 +371,7 @@
   width: 391px;
 }
 
-.my-account-default .rectangle-7 {
+.my-booking .rectangle-7 {
   height: 323px;
   left: 0;
   position: absolute;
@@ -379,7 +379,7 @@
   width: 391px;
 }
 
-.my-account-default .text-wrapper-9 {
+.my-booking .text-wrapper-9 {
   color: #181e4b;
   font-family: "Volkhov", Helvetica;
   font-size: 31.6px;
@@ -392,7 +392,7 @@
   width: 193px;
 }
 
-.my-account-default .photo {
+.my-booking .photo {
   height: 476px;
   left: 0;
   position: absolute;
@@ -400,7 +400,7 @@
   width: 439px;
 }
 
-.my-account-default .expert-photography {
+.my-booking .expert-photography {
   color: #181e4b;
   font-family: "Volkhov", Helvetica;
   font-size: 31.6px;
@@ -413,7 +413,7 @@
   width: 232px;
 }
 
-.my-account-default .decorations {
+.my-booking .decorations {
   height: 476px;
   left: 467px;
   position: absolute;
@@ -421,7 +421,7 @@
   width: 439px;
 }
 
-.my-account-default .overlap-3 {
+.my-booking .overlap-3 {
   height: 80px;
   left: 38px;
   position: absolute;
@@ -429,7 +429,7 @@
   width: 317px;
 }
 
-.my-account-default .qui-tempore-2 {
+.my-booking .qui-tempore-2 {
   color: #181e4b;
   font-family: "Poppins", Helvetica;
   font-size: 16px;
@@ -442,7 +442,7 @@
   width: 313px;
 }
 
-.my-account-default .makeup {
+.my-booking .makeup {
   height: 476px;
   left: 467px;
   position: absolute;
@@ -450,7 +450,7 @@
   width: 439px;
 }
 
-.my-account-default .catering {
+.my-booking .catering {
   height: 476px;
   left: 934px;
   position: absolute;
@@ -458,7 +458,7 @@
   width: 439px;
 }
 
-.my-account-default .overlap-group-5 {
+.my-booking .overlap-group-5 {
   height: 80px;
   left: 42px;
   position: absolute;
@@ -466,7 +466,7 @@
   width: 314px;
 }
 
-.my-account-default .qui-tempore-3 {
+.my-booking .qui-tempore-3 {
   color: #181e4b;
   font-family: "Poppins", Helvetica;
   font-size: 16px;
@@ -479,7 +479,7 @@
   width: 313px;
 }
 
-.my-account-default .rectangle-8 {
+.my-booking .rectangle-8 {
   height: 323px;
   left: 0;
   object-fit: cover;
@@ -488,7 +488,7 @@
   width: 391px;
 }
 
-.my-account-default .event-planner {
+.my-booking .event-planner {
   height: 476px;
   left: 934px;
   position: absolute;
@@ -496,7 +496,7 @@
   width: 439px;
 }
 
-.my-account-default .one-stop-event {
+.my-booking .one-stop-event {
   color: #181e4b;
   font-family: "Volkhov", Helvetica;
   font-size: 31.6px;
@@ -509,7 +509,7 @@
   width: 234px;
 }
 
-.my-account-default .footer {
+.my-booking .footer {
   background-color: #ffffff;
   height: 474px;
   left: 0;
@@ -518,7 +518,7 @@
   width: 1920px;
 }
 
-.my-account-default .group-wrapper {
+.my-booking .group-wrapper {
   height: 341px;
   left: 346px;
   position: relative;
@@ -526,13 +526,13 @@
   width: 1228px;
 }
 
-.my-account-default .group-4 {
+.my-booking .group-4 {
   height: 341px;
   position: relative;
   width: 1230px;
 }
 
-.my-account-default .text-wrapper-10 {
+.my-booking .text-wrapper-10 {
   color: #181433;
   font-family: "Manrope", Helvetica;
   font-size: 16px;
@@ -546,7 +546,7 @@
   white-space: nowrap;
 }
 
-.my-account-default .rectangle-9 {
+.my-booking .rectangle-9 {
   background-color: #e4e4e9;
   height: 2px;
   left: 26px;
@@ -555,7 +555,7 @@
   width: 1200px;
 }
 
-.my-account-default .nav-wrap {
+.my-booking .nav-wrap {
   height: 180px;
   left: 317px;
   position: absolute;
@@ -563,7 +563,7 @@
   width: 911px;
 }
 
-.my-account-default .nav-list-item {
+.my-booking .nav-list-item {
   height: 156px;
   left: 0;
   position: absolute;
@@ -571,7 +571,7 @@
   width: 99px;
 }
 
-.my-account-default .text-wrapper-11 {
+.my-booking .text-wrapper-11 {
   color: #181433;
   font-family: "Manrope", Helvetica;
   font-size: 21px;
@@ -584,7 +584,7 @@
   white-space: nowrap;
 }
 
-.my-account-default .frame {
+.my-booking .frame {
   align-items: flex-start;
   display: inline-flex;
   flex-direction: column;
@@ -594,7 +594,7 @@
   top: 48px;
 }
 
-.my-account-default .text-wrapper-12 {
+.my-booking .text-wrapper-12 {
   color: #181433;
   font-family: "Manrope", Helvetica;
   font-size: 16px;
@@ -607,7 +607,7 @@
   width: fit-content;
 }
 
-.my-account-default .text-wrapper-13 {
+.my-booking .text-wrapper-13 {
   color: #181433;
   font-family: "Manrope", Helvetica;
   font-size: 16px;
@@ -619,7 +619,7 @@
   width: fit-content;
 }
 
-.my-account-default .nav-list-item-2 {
+.my-booking .nav-list-item-2 {
   height: 180px;
   left: 234px;
   position: absolute;
@@ -627,7 +627,7 @@
   width: 189px;
 }
 
-.my-account-default .frame-2 {
+.my-booking .frame-2 {
   align-items: flex-start;
   display: inline-flex;
   flex-direction: column;
@@ -637,7 +637,7 @@
   top: 48px;
 }
 
-.my-account-default .nav-list-item-3 {
+.my-booking .nav-list-item-3 {
   height: 173px;
   left: 522px;
   position: absolute;
@@ -645,7 +645,7 @@
   width: 393px;
 }
 
-.my-account-default .div-wrapper {
+.my-booking .div-wrapper {
   height: 52px;
   left: 0;
   position: absolute;
@@ -653,19 +653,19 @@
   width: 389px;
 }
 
-.my-account-default .overlap-group-wrapper {
+.my-booking .overlap-group-wrapper {
   height: 52px;
   width: 393px;
 }
 
-.my-account-default .overlap-group-6 {
+.my-booking .overlap-group-6 {
   background-color: #93aec130;
   height: 52px;
   position: relative;
   width: 389px;
 }
 
-.my-account-default .text-wrapper-14 {
+.my-booking .text-wrapper-14 {
   color: #181433;
   font-family: "Manrope", Helvetica;
   font-size: 16px;
@@ -679,7 +679,7 @@
   white-space: nowrap;
 }
 
-.my-account-default .overlap-4 {
+.my-booking .overlap-4 {
   background-color: #f87c56;
   border-radius: 10px;
   box-shadow: 0px 20px 35px #df695126;
@@ -690,7 +690,7 @@
   width: 149px;
 }
 
-.my-account-default .text-wrapper-15 {
+.my-booking .text-wrapper-15 {
   color: #ffffff;
   font-family: "Manrope", Helvetica;
   font-size: 16px;
@@ -703,7 +703,7 @@
   white-space: nowrap;
 }
 
-.my-account-default .will-send-you-weekly {
+.my-booking .will-send-you-weekly {
   color: #181433;
   font-family: "Manrope", Helvetica;
   font-size: 16px;
@@ -716,7 +716,7 @@
   top: 121px;
 }
 
-.my-account-default .group-5 {
+.my-booking .group-5 {
   height: 107px;
   left: 7px;
   position: absolute;
@@ -724,7 +724,7 @@
   width: 215px;
 }
 
-.my-account-default .discover-book {
+.my-booking .discover-book {
   color: #757095;
   font-family: "Manrope", Helvetica;
   font-size: 16px;
@@ -737,7 +737,7 @@
   width: 213px;
 }
 
-.my-account-default .group-6 {
+.my-booking .group-6 {
   height: 20px;
   left: 0;
   position: absolute;
@@ -745,7 +745,7 @@
   width: 128px;
 }
 
-.my-account-default .original-logo {
+.my-booking .original-logo {
   height: 72px;
   left: 0;
   object-fit: cover;
@@ -754,7 +754,7 @@
   width: 239px;
 }
 
-.my-account-default .group-7 {
+.my-booking .group-7 {
   height: 324px;
   left: 0;
   position: absolute;
@@ -762,18 +762,18 @@
   width: 1920px;
 }
 
-.my-account-default .group-8 {
+.my-booking .group-8 {
   height: 324px;
   width: 1922px;
 }
 
-.my-account-default .overlap-group-7 {
+.my-booking .overlap-group-7 {
   height: 324px;
   position: relative;
   width: 1920px;
 }
 
-.my-account-default .footer-head {
+.my-booking .footer-head {
   background-image: url(./img/rectangle-19380.png);
   background-size: 100% 100%;
   height: 324px;
@@ -783,12 +783,12 @@
   width: 1920px;
 }
 
-.my-account-default .rectangle-10 {
+.my-booking .rectangle-10 {
   background-color: #1d1d1d54;
   height: 324px;
 }
 
-.my-account-default .text-wrapper-16 {
+.my-booking .text-wrapper-16 {
   color: #ffffff;
   font-family: "Volkhov", Helvetica;
   font-size: 50px;
@@ -803,18 +803,18 @@
   width: 639px;
 }
 
-.my-account-default .ant-dropdown .ant-dropdown-menu,
+.my-booking .ant-dropdown .ant-dropdown-menu,
 .my-account-dropdown.ant-dropdown .ant-dropdown-menu{
   padding: 14px !important;
   width: 180px !important;
 }
 
-.my-account-default a.ant-dropdown-trigger:hover,
+.my-booking a.ant-dropdown-trigger:hover,
 .my-account-dropdown a.ant-dropdown-trigger:hover{
   cursor: pointer;
 }
 
-.my-account-default .ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content,
+.my-booking .ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content,
 .my-account-dropdown.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content{
   font-size: 20px !important;
 }

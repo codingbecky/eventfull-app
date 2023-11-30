@@ -15,7 +15,7 @@ import { Route, Switch, useLocation } from 'react-router-dom'
 
 import "./style.css";
 
-export const MyAccount = () => {
+export const MyProfile = () => {
   
   useEffect(()  => { document.body.classList.remove('login-style'); });
 
@@ -138,7 +138,7 @@ export const MyAccount = () => {
     <ConfigProvider theme={customAntdStyle}>
       {contextHolder}
       { getJwtToken() ?
-      <div className="my-account">
+      <div className="my-profile">
         <div className="div-2">
           <div className="overlap">
             <img className="bg-img" alt="Bg img" src="/img/bgimg.png" />
@@ -172,7 +172,7 @@ export const MyAccount = () => {
                     </a> */}
                     <Login2 className="login-2-instance" />
                       <Dropdown
-                        overlayClassName="my-account-dropdown"
+                        overlayClassName="my-profile-dropdown"
                         menu={{
                           items,
                         }}
@@ -210,13 +210,13 @@ export const MyAccount = () => {
                 <div className="rectangle-2" />
                 <div className="group-2">
                   <div className="overlap-group-2">
-                    <a href='/myaccount-default/#anchor'><div className="rectangle-3" /></a>
-                    <a href='/myaccount/#anchor'><div className="rectangle-4" /></a>
+                    <a href='/mybooking/#anchor'><div className="rectangle-3" /></a>
+                    <a href='/myprofile/#anchor'><div className="rectangle-4" /></a>
                     <a href='/subscribe/#anchor'><div className="rectangle-5" /></a>
                     <a href='/plans/#anchor'><div className="rectangle-6" /></a>
                     <div className="group-3">
-                      <a href='/myaccount-default/#anchor'><div className="text-wrapper-6">My Bookings</div></a>
-                      <a href='/myaccount/#anchor'><div className="text-wrapper-7">My Profile</div></a>
+                      <a href='/mybooking/#anchor'><div className="text-wrapper-6">My Bookings</div></a>
+                      <a href='/myprofile/#anchor'><div className="text-wrapper-7">My Profile</div></a>
                       <a href='/subscribe/#anchor'><div className="billing-subscription">Subscription</div></a>
                       <a href='/plans/#anchor'><div class="get-eventfull-pro">Get Eventfull Pro</div></a>
                     </div>

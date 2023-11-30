@@ -20,7 +20,7 @@ public class Vendor {
     private String lastName;
 
     @NotBlank
-    private String DateOfBirth;
+    private String dateOfBirth;
 
     @NotBlank
     private String emailAddress;
@@ -28,7 +28,7 @@ public class Vendor {
     @NotBlank
     private String phoneNumber;
 
-    private String StreetAddress;
+    private String streetAddress;
 
     public Vendor(String _id, String userId, String firstName, String middleName, String lastName, String dateOfBirth, String emailAddress, String phoneNumber, String streetAddress) {
         this._id = _id;
@@ -36,10 +36,10 @@ public class Vendor {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
-        this.DateOfBirth = dateOfBirth;
+        this.dateOfBirth = dateOfBirth;
         this.emailAddress = emailAddress;
         this.phoneNumber = phoneNumber;
-        this.StreetAddress = streetAddress;
+        this.streetAddress = streetAddress;
     }
 
     public String get_id() {
@@ -82,12 +82,12 @@ public class Vendor {
         this.lastName = lastName;
     }
 
-    public String getDateOfBirth() {
-        return DateOfBirth;
+    public String getdateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
-        DateOfBirth = dateOfBirth;
+    public void setdateOfBirth(String dateOfBirth) {
+        dateOfBirth = dateOfBirth;
     }
 
     public String getEmailAddress() {
@@ -107,11 +107,11 @@ public class Vendor {
     }
 
     public String getStreetAddress() {
-        return StreetAddress;
+        return streetAddress;
     }
 
     public void setStreetAddress(String streetAddress) {
-        StreetAddress = streetAddress;
+        this.streetAddress = streetAddress;
     }
 
 }

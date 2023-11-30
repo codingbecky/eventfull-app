@@ -249,6 +249,14 @@
   white-space: nowrap;
 }
 
+.plans .overlap-1 {
+  height: 80px;
+  left: 127px;
+  position: absolute;
+  top: 264px;
+  width: 509px;
+}
+
 .plans .overlap-2 {
   height: 80px;
   left: 127px;
@@ -380,7 +388,7 @@
 
 .plans .overlap-group-wrapper {
   height: 52px;
-  width: 393px;
+  width: 288px;
 }
 
 .plans .element-per-month-paid-wrapper {

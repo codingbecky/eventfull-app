@@ -21,7 +21,7 @@ import { VendorLogin } from "./screens/VendorLogin";
 import { MainPage } from "./screens/MainPage";
 import { AboutUs } from "./screens/AboutUs";
 
-import { SearchCategory } from "./screens/SearchCategory";
+import { Vendors } from "./screens/Vendors";
 import { VendorDetailsPage } from "./screens/VendorDetailsPage/VendorDetailsPage";
 import { CustomerBookingPage } from "./screens/CustomerBookingPage";
 
@@ -30,8 +30,8 @@ import { VendorCompany } from "./screens/VendorCompany";
 import { VendorBooking } from "./screens/VendorBooking";
 import { VendorSchedule } from "./screens/VendorSchedule";
 
-import { MyAccountDefault } from "./screens/MyAccountDefault";
-import { MyAccount } from "./screens/MyAccount";
+import { MyBooking } from "./screens/MyBooking";
+import { MyProfile } from "./screens/MyProfile";
 import { Subscribe } from "./screens/Subscribe";
 import { Plans } from "./screens/Plans";
 import { Payment } from "./screens/Payment";
@@ -50,12 +50,12 @@ export default function App() {
           <Route path="/about-us" exact element={<AboutUs />} />
           {/* <Route path="/register" element={<Register />} /> */}
           
-          <Route path="/search-category" element={<SearchCategory />} />
+          <Route path="/vendors" element={<Vendors />} />
           <Route path="/vendor-details" element={<VendorDetailsPage />} />
           <Route path="/booking-status" element={<CustomerBookingPage />} />
 
-          <Route path="/myaccount-default" element={<MyAccountDefault />} />
-          <Route path="/myaccount" element={<MyAccount />} />
+          <Route path="/mybooking" element={<MyBooking />} />
+          <Route path="/myprofile" element={<MyProfile />} />
           <Route path="/subscribe" element={<Subscribe />} />
           <Route path="/plans" element={<Plans />} />
           <Route path="/payment" element={<Payment />} />

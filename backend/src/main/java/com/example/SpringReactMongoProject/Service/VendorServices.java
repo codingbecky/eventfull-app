@@ -19,4 +19,10 @@ public class VendorServices {
     public void deleteVendor(String id) { repo.deleteById(id); }
 
     public Vendor getVendorById(String vendorId) { return repo.findById(vendorId).get(); }
+
+    //public Vendor getVendorByUserId(String userId) { return repo.findByUserId(userId).get(); }
+
+    //public Iterable<Vendor> getVendorByThePersonsFirstname(String firstName) { return repo.findByThePersonsFirstname(firstName); }
+
+    public Vendor getVendorByUserId(String userId) { return repo.findByUserId(userId); }
 }

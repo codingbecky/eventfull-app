@@ -15,7 +15,7 @@ import { Route, Switch, useLocation } from 'react-router-dom'
 
 import "./style.css";
 
-export const MyAccountDefault = () => {
+export const MyBooking = () => {
   
   useEffect(()  => { document.body.classList.remove('login-style'); });
 
@@ -138,7 +138,7 @@ export const MyAccountDefault = () => {
     <ConfigProvider theme={customAntdStyle}>
       {contextHolder}
       { getJwtToken() ?
-      <div className="my-account-default">
+      <div className="my-booking">
         <div className="div-2">
           <div className="overlap">
             <img className="bg-img" alt="Bg img" src="/img/bgimg.png" />
@@ -229,13 +229,13 @@ export const MyAccountDefault = () => {
                 <div className="overlap-group-2">
                   <div className="rectangle-2" />
                   <p className="p">You do not create any booking yet.</p>
-                  <a href='/myaccount-default/#anchor'><div className="rectangle-3" /></a>
-                    <a href='/myaccount/#anchor'><div className="rectangle-4" /></a>
+                  <a href='/mybooking/#anchor'><div className="rectangle-3" /></a>
+                    <a href='/myprofile/#anchor'><div className="rectangle-4" /></a>
                     <a href='/subscribe/#anchor'><div className="rectangle-5" /></a>
                     <a href='/plans/#anchor'><div className="rectangle-6" /></a>
                     <div className="group-3">
-                      <a href='/myaccount-default/#anchor'><div className="text-wrapper-5">My Bookings</div></a>
-                      <a href='/myaccount/#anchor'><div className="text-wrapper-6">My Profile</div></a>
+                      <a href='/mybooking/#anchor'><div className="text-wrapper-5">My Bookings</div></a>
+                      <a href='/myprofile/#anchor'><div className="text-wrapper-6">My Profile</div></a>
                       <a href='/subscribe/#anchor'><div className="billing-subscription">Subscription</div></a>
                       <a href='/plans/#anchor'><div class="get-eventfull-pro">Get Eventfull Pro</div></a>
                     </div>

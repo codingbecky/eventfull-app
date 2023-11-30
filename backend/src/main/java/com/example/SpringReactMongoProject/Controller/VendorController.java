@@ -2,6 +2,7 @@ package com.example.SpringReactMongoProject.Controller;
 
 import com.example.SpringReactMongoProject.Entity.Vendor;
 import com.example.SpringReactMongoProject.Service.VendorServices;
+import org.bson.json.JsonObject;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -40,5 +41,25 @@ public class VendorController {
     @RequestMapping("/search/{id}")
     private Vendor getVendor(@PathVariable(name="id")String vendorId){
         return vendorServices.getVendorById(vendorId);
+    }
+
+    /*@RequestMapping("/find/{firstname}")
+    private Iterable<Vendor> getVendor(@PathVariable(name="firstname")String firstName){
+        System.out.println("here!");
+        return vendorServices.getVendorByThePersonsFirstname(firstName);
+    }*/
+
+    /*@PostMapping(value = "/find")
+    private Iterable<Vendor> getVendor(@RequestBody Vendor vender){
+        System.out.println("here!");
+        System.out.println(vender);
+        return vendorServices.getVendorByThePersonsFirstname(vender.getFirstName());
+    }*/
+
+    @PostMapping(value = "/getinfo")
+    private Vendor getVendorByUserId(@RequestBody Vendor vender){
+        System.out.println("here!");
+        System.out.println(vender);
+        return vendorServices.getVendorByUserId(vender.getUserId());
     }
 }

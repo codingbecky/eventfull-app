@@ -1,5 +1,6 @@
 package com.example.SpringReactMongoProject.Controller;
 
+import com.example.SpringReactMongoProject.Entity.Vendor;
 import com.example.SpringReactMongoProject.Entity.VendorDetail;
 import com.example.SpringReactMongoProject.Service.VendorDetailServices;
 import org.springframework.web.bind.annotation.*;
@@ -40,5 +41,10 @@ public class VendorDetailController {
     @RequestMapping("/search/{id}")
     private VendorDetail getVendorDetail(@PathVariable(name="id")String vendorDetailId){
         return vendorDetailServices.getVendorDetailById(vendorDetailId);
+    }
+
+    @PostMapping(value = "/getinfo")
+    private VendorDetail getVendor(@RequestBody VendorDetail venderDetail){
+        return vendorDetailServices.getVendorDetailByUserId(venderDetail.getUserId());
     }
 }

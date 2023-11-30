@@ -14,6 +14,7 @@ import { getJwtToken, saveJwtToken, removeJwtToken } from '../../helper/jwt.help
 import "./style.css";
 
 const SubmitButton = ({ form }) => {
+  
   const [submittable, setSubmittable] = React.useState(false);
   
   // Watch all values

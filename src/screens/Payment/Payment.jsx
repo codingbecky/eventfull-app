@@ -206,13 +206,13 @@ export const Payment = () => {
             }
 
             <div className="rectangle-2" />
-            <a href='/myaccount-default/#anchor'><div className="rectangle-3" /></a>
-            <a href='/myaccount/#anchor'><div className="rectangle-4" /></a>
+            <a href='/mybooking/#anchor'><div className="rectangle-3" /></a>
+            <a href='/myprofile/#anchor'><div className="rectangle-4" /></a>
             <a href='/subscribe/#anchor'><div className="rectangle-5" /></a>
             <a href='/plans/#anchor'><div className="rectangle-6" /></a>
             <div className="group" id="anchor">
-              <a href='/myaccount-default/#anchor'><div className="text-wrapper-4">My Bookings</div></a>
-              <a href='/myaccount/#anchor'><div className="text-wrapper-5">My Profile</div></a>
+              <a href='/mybooking/#anchor'><div className="text-wrapper-4">My Bookings</div></a>
+              <a href='/myprofile/#anchor'><div className="text-wrapper-5">My Profile</div></a>
               <a href='/subscribe/#anchor'><div className="text-wrapper-6">Subscription</div></a>
               <a href='/plans/#anchor'><div class="text-wrapper-7">Get Eventfull Pro</div></a>
             </div>

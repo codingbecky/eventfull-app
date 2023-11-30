@@ -969,3 +969,139 @@
 .my-account-dropdown.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content{
   font-size: 20px !important;
 }
+
+.vendor-company .title-wrapper {
+  height: 76px;
+  left: 334px;
+  position: absolute;
+  top: 1100px;
+  width: 456px;
+}
+
+.vendor-company .title {
+  height: 76px;
+  position: relative;
+}
+
+.vendor-company .abc {
+  color: var(--black-8);
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 600;
+  height: 16px;
+  left: 77px;
+  letter-spacing: 0.16px;
+  line-height: 16px;
+  position: absolute;
+  top: 29px;
+  white-space: nowrap;
+}
+
+.vendor-company .frame-3 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+}
+
+.vendor-company .ant-form-item.text-wrapper-3 .ant-input{
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  /* width: fit-content; */
+  width: 500px;
+  height: 40px;
+}
+
+.vendor-company .ant-form-item.text-wrapper-3 label{
+  display: none !important;
+}
+
+.vendor-company .frame-9 .ant-form-item,
+.vendor-company .frame-9 .ant-select{
+  padding-left: 30px;
+}
+
+.vendor-company .frame-9 .antd-datetime-picker .ant-row{
+  width: 250px;
+}
+
+.vendor-company .frame-9 .antd-datetime-picker label{
+  display: none !important;
+}
+
+.vendor-company .frame-9 .antd-datetime-picker .ant-picker-input{
+  font-size: 40px;
+}
+
+/*.vendor-company .frame-9 .ant-form-item-row.antd-datetime-picker .ant-picker-input */
+#dateOfBirth{
+  font-size: 24px;
+}
+
+.vendor-company .submit-button button{
+  font-size: 24px;
+  width: 70px;
+  height: 45px;
+}
+
+.vendor-company .submit-button .ant-btn-primary:not(:disabled){
+  background-color: #f87c56;
+}
+
+.vendor-company .submit-button .ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover{
+  background-color: #ce5a37;
+}
+
+.vendor-company .frame-9 input:hover,
+.vendor-company .frame-9 input:focus,
+.vendor-company .ant-picker-focused,
+.vendor-company .ant-picker:hover{
+  border-color: #f87c56;
+}
+
+.vendor-company .ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+  height: 40px
+}
+/*
+.vendor-company .ant-select-single:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input{
+  font-size: 20px;
+} */
+.vendor-company .ant-select-single.ant-select-show-arrow .ant-select-selection-item, 
+.vendor-company .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder{
+  font-size: 24px;
+}
+
+.ant-select-dropdown .ant-select-item-group{
+  font-size: 20px;
+}
+
+
+.ant-select-dropdown .ant-select-item{
+  font-size: 18px;
+}
+
+.vendor-company .ant-input-affix-wrapper{
+  margin-left: 30px; 
+  margin-top: 20px;
+}
+
+
+.vendor-company .ant-input-textarea-affix-wrapper.ant-input-affix-wrapper > textarea.ant-input{
+  font-size: 24px;
+  
+}
+
+.vendor-company .ant-input-textarea-show-count .ant-input-data-count{
+  bottom:0;
+}
+
+.vendor-company .select-location label{
+  display: none;
+}

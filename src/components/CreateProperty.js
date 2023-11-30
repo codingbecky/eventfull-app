@@ -136,6 +136,7 @@ export default function CreateProperty(){
   } = theme.useToken();
 
   const [form] = Form.useForm();
+  
   const normFile = (e) => {
     if (Array.isArray(e)) {
       return e;

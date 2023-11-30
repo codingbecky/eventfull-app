@@ -1,1 +1,0 @@
-export { SearchCategory } from "./SearchCategory";

@@ -50,11 +50,12 @@ public class VendorDetail {
 
     private Integer maxCapacity;
 
+    private String imgUrl;
     private String imgUrl1;
     private String imgUrl2;
     private String imgUrl3;
 
-    public VendorDetail(String _id, String userId, String companyName, String contactName, String emailAddress, String phoneNumber, String streetAddress, String category, String subCategory, String description, String serviceDescription, String availableDates, String nonAvailableDates, String location, Float rating, Integer minPrice, Integer maxPrice, Integer maxCapacity, String imgUrl1, String imgUrl2, String imgUrl3) {
+    public VendorDetail(String _id, String userId, String companyName, String contactName, String emailAddress, String phoneNumber, String streetAddress, String category, String subCategory, String description, String serviceDescription, String availableDates, String nonAvailableDates, String location, Float rating, Integer minPrice, Integer maxPrice, Integer maxCapacity, String imgUrl, String imgUrl1, String imgUrl2, String imgUrl3) {
         this._id = _id;
         this.userId = userId;
         this.companyName = companyName;
@@ -73,6 +74,7 @@ public class VendorDetail {
         this.minPrice = minPrice;
         this.maxPrice = maxPrice;
         this.maxCapacity = maxCapacity;
+        this.imgUrl = imgUrl;
         this.imgUrl1 = imgUrl1;
         this.imgUrl2 = imgUrl2;
         this.imgUrl3 = imgUrl3;
@@ -220,6 +222,14 @@ public class VendorDetail {
 
     public void setMaxCapacity(Integer maxCapacity) {
         this.maxCapacity = maxCapacity;
+    }
+
+    public String getImage() {
+        return imgUrl;
+    }
+
+    public void setImage(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
 
     public String getImage1() {
