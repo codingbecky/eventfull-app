@@ -13,8 +13,13 @@ import { Login } from "../../icons/Login";
 import { ThirtyTwoChevronLeft } from "../../icons/ThirtyTwoChevronLeft";
 import { ThirtyTwoChevronRight } from "../../icons/ThirtyTwoChevronRight";
 import "./style.css";
+import { ConfigProvider, Layout, Form, Input, Button, Space, Checkbox, Divider, Upload, DatePicker, Progress, message, Dropdown, Select, InputNumber } from 'antd';
 
 export const VendorDetailsPage = () => {
+  const [name, setName] = React.useState('');
+  const [email, setEmail] = React.useState('');
+  const [confirmEmail, setConfirmEmail] = React.useState('');
+  console.log(email);
   return (
     <div className="vendor-details-page">
       <div className="div-2">
@@ -74,14 +79,17 @@ export const VendorDetailsPage = () => {
                   <div className="overlap-7">
                     <div className="text-wrapper-16">Name</div>
                     <img className="img-2" alt="Ooui user avatar" src="/img/ooui-user-avatar-outline.svg" />
+                    <Input value={name} onChange={(event) => {setName(event.nativeEvent.data);}}/>
                   </div>
                   <div className="overlap-8">
                     <div className="text-wrapper-17">Email</div>
                     <img className="img-2" alt="Clarity email line" src="/img/clarity-email-line.svg" />
+                    <Input value={email} onChange={setEmail}/>
                   </div>
                   <div className="overlap-9">
                     <img className="img-2" alt="Clarity email line" src="/img/clarity-email-line-1.svg" />
                     <div className="text-wrapper-18">Confirm Email</div>
+                    <Input/>
                   </div>
                   <div className="overlap-10">
                     <div className="text-wrapper-19">Phone</div>
@@ -286,39 +294,6 @@ export const VendorDetailsPage = () => {
               textClassName="testimonial-social-proof-instance"
             />
           </div>
-          {/* <div className="testimonial-social-instance-wrapper">
-            <TestimonialSocial
-              avatar="/img/avatar.png"
-              avatarClassName="testimonial-social-instance"
-              className="testimonial-social-proof"
-              divClassName="testimonial-social-2"
-              ratingStarRow={
-                <ElementStarFilledWrapper
-                  className="design-component-instance-node-3"
-                  star="/img/star-1.svg"
-                  starClassName="design-component-instance-node-2"
-                />
-              }
-              ratingStarRowElementStarFilledWrapperElementStarFilledClassName="design-component-instance-node-3"
-              ratingStarRowElementStarFilledWrapperElementStarFilledClassNameOverride="design-component-instance-node-3"
-              ratingStarRowElementStarFilledWrapperImg="/img/star-1-4.svg"
-              ratingStarRowElementStarFilledWrapperImgClassName="design-component-instance-node-2"
-              ratingStarRowElementStarFilledWrapperImgClassNameOverride="design-component-instance-node-2"
-              ratingStarRowElementStarFilledWrapperStar="/img/star-1-1.svg"
-              ratingStarRowElementStarFilledWrapperStar1="/img/star-1-3.svg"
-              ratingStarRowElementStarFilledWrapperStar2="/img/star-1-2.svg"
-              ratingStarRowElementStarFilledWrapperStarClassName="design-component-instance-node-2"
-              ratingStarRowElementStarFilledWrapperStarClassNameOverride="design-component-instance-node-2"
-              ratingStarRowElementStarFilledWrapperStarWrapperClassName="design-component-instance-node-3"
-              ratingStarRowElementStarFilledWrapperStarWrapperClassNameOverride="design-component-instance-node-3"
-              ratingStarRowRatingStarRowClassName="testimonial-social-3"
-              text="Becky J"
-              text1="Seoul, South Korea "
-              text2="What a great experience using eventful! I booked my wedding venue through the platform, it was really smooth and they supported me a lot!Highly recommended! "
-              textClassName="testimonial-social-proof-instance"
-            />
-          </div> */}
-          {/* <div className="rectangle-11" /> */}
           <div className="calendar-unlock">
             <div className="overlap-16">
               <div className="calendar-section">
