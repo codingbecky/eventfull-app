@@ -2200,3 +2200,21 @@
 .my-account-dropdown.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content{
   font-size: 20px !important;
 }
+
+.SelectWrapper {
+  position: relative;
+}
+
+.prefix-icon-wrapper {
+    position: absolute;
+    z-index: 1;
+    width: 3rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ant-select .ant-select-selector {
+      padding-left: calc(3rem - 8px);
+    }

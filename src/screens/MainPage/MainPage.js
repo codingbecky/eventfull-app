@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import axios from "axios";
-import { ConfigProvider, Layout, Form, Input, Button, Space, Checkbox, Divider, message, Dropdown } from 'antd';
+import { ConfigProvider, Layout, Form, Input, Button, Space, Checkbox, Divider, message, Dropdown, Select, DatePicker } from 'antd';
 import { DeleteOutlined, EditOutlined, SmileOutlined, DownOutlined } from "@ant-design/icons";
 
 import { LoginGroup } from "../../components/LoginGroup";
@@ -47,6 +47,13 @@ export const MainPage = () => {
   const [messageApi, contextHolder] = message.useMessage();
 
   const [isHoverVendor, setHoverVendor] = React.useState(false);
+
+  const [location, setLocation] = React.useState(null);
+  const [date, setDate] = React.useState(null);
+
+  const [vendorType, setVendorType] = React.useState(null);
+
+  const [vendorList, setVendorList] = React.useState([]);
 
   const [data, setData] = useState({
     email: "",
@@ -170,24 +177,111 @@ export const MainPage = () => {
                   <div className="frame-2">
                     <div className="where">
                       <div className="overlap-group-2">
-                        <div className="rectangle-3" />
-                        <div className="group">
-                          <img className="vector" alt="Vector" src="img/vector.svg" />
-                          <div className="text-wrapper-4">Where</div>
-                        </div>
+
+
+                         <div className='SelectWrapper'>
+                              <div className="prefix-icon-wrapper"><img className="img" alt="Vector" src="img/vector-1.svg" /></div>
+                              <Select
+                                                            id="location"
+                                                            icon="img/vector.svg"
+                                                            value={location}
+                                                            placeholder="Where"
+                                                            style={{ width: 530, paddingLeft: 50}}
+                                                            onChange={setLocation}
+                                                            options={[{ value: 'vancouver', label: 'Vancouver' },
+                                                                      { value: 'vancouverNorth', label: 'Vancouver North' },
+                                                                      { value: 'vancouverWest', label: 'Vancouver West' },
+                                                                      { value: 'burnaby', label: 'Burnaby' },
+                                                                      { value: 'coquitlam', label: 'Coquitlam' },
+                                                                      { value: 'surrey', label: 'Surrey' },
+                                                                      { value: 'richmond', label: 'Richmond' }]}
+                                                        />
+                            </div>
+
+
                       </div>
                     </div>
                     <div className="overlap-wrapper">
                       <div className="overlap-2">
                         <div className="text-wrapper-5">When</div>
                         <img className="img" alt="Vector" src="img/vector-1.svg" />
+                        <DatePicker onChange={setDate} />
                       </div>
                     </div>
                     <div className="overlap-wrapper">
                       <div className="overlap-2">
                         <div className="text-wrapper-5">Vendor Type</div>
-                        <img className="vector-2" alt="Vector" src="img/vector-2.svg" />
-                      </div>
+
+<div className='SelectWrapper'>
+                        <div className="prefix-icon-wrapper"><img className="vector-2" alt="Vector" src="img/vector-2.svg" /></div>
+                                                      <Select
+                                                                          value={vendorType}
+                                                                          style={{ width: 530 }}
+                                                                          onChange={setVendorType}
+                                                                          className='category-select'
+                                                                          placeholder="Vender Type"
+                                                                          options={[
+                                                                            {
+                                                                              label: 'Venue',
+                                                                              options: [
+                                                                                { label: 'Hotel', value: 'venue,hotel' },
+                                                                                { label: 'Winery', value: 'venue,winery' },
+                                                                                { label: 'Park', value: 'venue,park' },
+                                                                                { label: 'Castle', value: 'venue,castle' },
+                                                                              ],
+                                                                            },
+                                                                            {
+                                                                              label: 'Decoration',
+                                                                              options: [
+                                                                                { label: 'Balloon', value: 'decoration,balloon' },
+                                                                                { label: 'Floral', value: 'decoration,floral' },
+                                                                                { label: 'Furniture', value: 'decoration,furniture' },
+                                                                                { label: 'Signage and Banners', value: 'decoration,signageAndBanners' },
+                                                                              ],
+                                                                            },
+                                                                            {
+                                                                              label: 'Catering',
+                                                                              options: [
+                                                                                { label: 'Buffet', value: 'catering,buffet' },
+                                                                                { label: 'Food Stations', value: 'catering,foodStations' },
+                                                                                { label: 'Cocktail Receptions', value: 'catering,cocktail' },
+                                                                                { label: 'Outdoor BBQ', value: 'catering,BBQ' },
+                                                                              ],
+                                                                            },
+                                                                            {
+                                                                              label: 'Photography',
+                                                                              options: [
+                                                                                { label: 'Wedding', value: 'photography,wedding' },
+                                                                                { label: 'Portrait', value: 'photography,portrait' },
+                                                                                { label: 'Commercial', value: 'photography,commercial' },
+                                                                                { label: 'Event', value: 'photography,event' },
+                                                                              ],
+                                                                            },
+                                                                            {
+                                                                              label: 'Planner',
+                                                                              options: [
+                                                                                { label: 'Wedding', value: 'planner,wedding' },
+                                                                                { label: 'Corporate Event', value: 'planner,corporate' },
+                                                                                { label: 'Social Event', value: 'planner,social' },
+                                                                                { label: 'House Party', value: 'planner,houseParty' },
+                                                                              ],
+                                                                            },
+                                                                            {
+                                                                              label: 'Make-up',
+                                                                              options: [
+                                                                                { label: 'Bridal', value: 'make-up,bridal' },
+                                                                                { label: 'Fashion', value: 'make-up,fashion' },
+                                                                                { label: 'Beauty', value: 'make-up,beauty' },
+                                                                                { label: 'Special Effects', value: 'make-up,specialEffects' },
+                                                                              ],
+                                                                            },
+                                                                          ]}
+                                                                        />
+                                                    </div>
+                                                    </div>
+
+
+
                     </div>
                     <div className="guest-search">
                       <div className="overlap-3">
@@ -197,7 +291,9 @@ export const MainPage = () => {
                             <img className="vector-3" alt="Vector" src="img/vector-3.svg" />
                           </div>
                         </div>
-                        <button className="btn-search">
+                        <button className="btn-search" onClick={()=>{
+                            window.location = '/vendor-details'
+                        }}>
                           <div className="div-wrapper">
                             <div className="text-wrapper-7">Search</div>
                           </div>

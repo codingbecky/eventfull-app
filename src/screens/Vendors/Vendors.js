@@ -54,7 +54,7 @@ export const Vendors = () => {
 
   const [isHoverVendor, setHoverVendor] = React.useState(false);
 
-  const [data, setData] = useState([]);
+
 
   // const [data, setData] = useState({
   //   _id: "",
@@ -78,17 +78,17 @@ export const Vendors = () => {
   //   imgUrl3: "",
   // });
 
-  useEffect(() => {
-    axios
-      .get(`${process.env.REACT_APP_API_URL}/api/v1/vendor-detail/getall`)
-      .then((response) => {
-        console.log(response);
-        setData(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+//  useEffect(() => {
+//    axios
+//      .get(`${process.env.REACT_APP_API_URL}/api/v1/vendor-detail/getall`)
+//      .then((response) => {
+//        console.log(response);
+//        setData(response.data);
+//      })
+//      .catch((error) => {
+//        console.log(error);
+//      });
+//  }, []);
 
   const signOut = () => {
     // console.log("signOut click");
@@ -119,24 +119,26 @@ export const Vendors = () => {
     }
   ];
 
-  // const cardData = [
-  //   { title: "Paris Hilton Hotel", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 1", imgUrl1: "/img/rectangle-19377-3.png" },
-  //   { title: "Stanley Park Pavilion", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 2", imgUrl1: "/img/b-img171-jpg.png" },
-  //   { title: "Paris Hilton Hotel 2", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 3", imgUrl1: "/img/rectangle-19377-3.png" },
-  //   { title: "Good Morning Bakery", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 4", imgUrl1: "/img/b-img168-jpg-1.png" },
-  //   { title: "Umbrella Events", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 5", imgUrl1: "/img/b-img166-jpg.png" },
-  //   { title: "Good Morning Bakery 6", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 6", imgUrl1: "/img/b-img168-jpg-1.png" },
-  //   { title: "Joey Restaurant", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 7", imgUrl1: "/img/rectangle-19379.png" },
-  //   { title: "Memotime Photography", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 8", imgUrl1: "/img/rectangle-19377-2.png" },
-  //   { title: "Joey Restaurant 9", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 9", imgUrl1: "/img/rectangle-19379.png" },
+   const cardData = [
+     { title: "Paris Hilton Hotel", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 1", imgUrl1: "/img/rectangle-19377-3.png" },
+     { title: "Stanley Park Pavilion", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 2", imgUrl1: "/img/b-img171-jpg.png" },
+     { title: "Paris Hilton Hotel 2", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 3", imgUrl1: "/img/rectangle-19377-3.png" },
+     { title: "Good Morning Bakery", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 4", imgUrl1: "/img/b-img168-jpg-1.png" },
+     { title: "Umbrella Events", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 5", imgUrl1: "/img/b-img166-jpg.png" },
+     { title: "Good Morning Bakery 6", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 6", imgUrl1: "/img/b-img168-jpg-1.png" },
+     { title: "Joey Restaurant", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 7", imgUrl1: "/img/rectangle-19379.png" },
+     { title: "Memotime Photography", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 8", imgUrl1: "/img/rectangle-19377-2.png" },
+     { title: "Joey Restaurant 9", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 9", imgUrl1: "/img/rectangle-19379.png" },
 
-  //   { title: "Paris Hilton Hotel", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 1", imgUrl1: "/img/rectangle-19377-3.png" },
-  //   { title: "Stanley Park Pavilion", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 2", imgUrl1: "/img/b-img171-jpg.png" },
-  //   { title: "Good Morning Bakery", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 4", imgUrl1: "/img/b-img168-jpg-1.png" },
-  //   { title: "Umbrella Events", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 5", imgUrl1: "/img/b-img166-jpg.png" },
-  //   { title: "Joey Restaurant", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 7", imgUrl1: "/img/rectangle-19379.png" },
-  //   { title: "Memotime Photography", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 8", imgUrl1: "/img/rectangle-19377-2.png" },
-  // ];
+     { title: "Paris Hilton Hotel", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 1", imgUrl1: "/img/rectangle-19377-3.png" },
+     { title: "Stanley Park Pavilion", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 2", imgUrl1: "/img/b-img171-jpg.png" },
+     { title: "Good Morning Bakery", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 4", imgUrl1: "/img/b-img168-jpg-1.png" },
+     { title: "Umbrella Events", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 5", imgUrl1: "/img/b-img166-jpg.png" },
+     { title: "Joey Restaurant", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 7", imgUrl1: "/img/rectangle-19379.png" },
+     { title: "Memotime Photography", description: "Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et. 8", imgUrl1: "/img/rectangle-19377-2.png" },
+   ];
+
+   const [data, setData] = useState(cardData);
 
   const handleChange = (value) => {
     if (value <= 1) { 
@@ -281,7 +283,7 @@ export const Vendors = () => {
                   data.slice(minValue, maxValue).map(item => (
 
                     <Col span={8}>
-                      <a href="/vendors">
+                      <a href="/vendor-details">
                         <Card
                           hoverable
                           style={{ width: 350 }}
